@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tmovie/core/configs/themes/app_theme.dart';
 import 'package:tmovie/presentation/splash/pages/splash.dart';
 
 void main() {
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashPage(),
+      theme: AppTheme.appTheme,
+      home: const SplashPage(),
     ) ;
   }
 }
